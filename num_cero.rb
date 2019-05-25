@@ -1,18 +1,22 @@
-num = ARGV[0].to_i
-num.times do
+number = ARGV[0].to_i
+number.times do
   print "*"
 end
 print "\n"
-
-(num-2).times do
+(number - 2).times do |i|
   print "*"
-  (num-2).times do
-    print " "
+  (number - 2).times do |j|
+    if j == i
+      print "*"
+    else
+      print " "
+    end
   end
   print "*"
   print "\n"
 end
-num.times do
+number.times do
   print "*"
 end
-  print "\n"
+print "\n"
+print "\n"

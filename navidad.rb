@@ -1,9 +1,22 @@
-lines = ARGV[0].to_i
-lenght = lines*2-1
-spaces = (length-1)/2
-i = 1
-while i <= lines
-  print " "*(spaces -i +1)
-  print "*"(2*i-1)
-  i=i+1
+value_user = ARGV[0].to_i
+value_user.times do |i|
+  i.times do |j|
+    print '*'
+  end
+  print "\n"
 end
+(value_user - 3).times do |i|
+  value_user.times do |j|
+    if j == (value_user - 3)/2
+      print "*"
+    else
+      print " "
+    end
+  end
+  print "\n"
+end
+(value_user - 2).times do
+  print "*"
+end
+print "\n"
+print "\n"
